@@ -29,7 +29,7 @@ $(document).ready(function(){
 
         // $('.heroImg').attr('src', myImgPath)
         // $('.page-header').css('background-image', 'url(' + myImgPath + ')', 'no-repeat');
-        $('.page-header').css({'background-image': 'url(' + myImgPath + ')', 'background-repeat': 'no-repeat', 'background-position': '50% 50%'});
+        $('.heroImg').css({'background-image': 'url(' + myImgPath + ')', 'background-repeat': 'no-repeat', 'background-position': '50% 50%'});
         console.log(heroId)
         // console.log(etag)
         console.log(response)
