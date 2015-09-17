@@ -146,6 +146,33 @@
         margin-top: 5px;
     }
 
+#timeline {
+  text-align: center;
+}
+
+
+.heroImg {
+  background-image: url(hulk2.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 261px;
+  margin-top: 20px;
+  padding-bottom: 0;
+  /*border: 2px solid #d4d4d4;*/
+  /*border-radius: 2px;*/
+  padding: 20px;
+  position: relative;
+  /*-webkit-box-shadow:inset 0 0 10px #000000;
+  box-shadow: inset 0 0 10px #000000;*/
+  -webkit-box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.9);
+}
+
+.page-header {
+  border-bottom: none;
+}
+
+
 @media (max-width: 767px) {
     ul.timeline:before {
         left: 40px;
