@@ -8,10 +8,10 @@ A simple front-end JavaScript application that interacts with the Marvel API. It
 
 ## Technologies
 
-HTML5/CSS3
-JavaScript
-Bootstrap
-Marvel API
+* HTML5/CSS3
+* JavaScript
+* Bootstrap
+* Marvel API
 
 ## User Stories
 
@@ -19,4 +19,4 @@ https://drive.google.com/file/d/0B9Crbz5DCG-uSkdBalc4UWp5d3M/view?usp=sharing
 
 ## Unsolved Problems or Major Hurdles
 
-I originally began the project more ambitiously, investigating the use of both Meteor and D3, but eventually decided to pivot to front-end only because of the time constraints. One of my main hurdles was the use of public, private, and hashed API keys to connect with the Marvel API. It turns out to be impossible to safeguard a private key without using a backend. 
+I originally began the project more ambitiously, investigating the use of both Meteor and D3, but eventually decided to pivot to front-end only because of the time constraints. I also begin to see it as targeted more to comic book collectors, that just the casual fan. One of my main hurdles was the use of public, private, and hashed API keys to connect with the Marvel API. It turns out to be impossible to safeguard a private key without using a backend. 
