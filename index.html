@@ -3,15 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <title>Marvel Timelines</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-dateFormat/1.0/jquery.dateFormat.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
-  <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <script src="marvel_timelines.js"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          <img src="hulk2.jpg" alt="hulk picture">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
   <div class="container">
     <div class="page-header">
       <div class="row">
@@ -20,19 +32,16 @@
         <div class="heroImg col-md-4">
           <h1 id="timeline"></h1>
           <form class="heroForm">
-            <input type="text" name="text" class="form-control input-lg heroInput" placeholder="Type in the name of a superhero" />
+            <input type="text" name="text" class="form-control input-lg heroInput" placeholder="Type in the name of a Marvel superhero" />
           </form>
         </div>
         <div class="col-md-4">
         </div>
-
       </div>
     </div>
     <ul class="timeline">
       <li class="timeline_li">
         <div class="timeline-badge"><i class="glyphicon glyphicon-hand-left"></i></div>
-
-        
         <div class="timeline-panel">
           <div class="timeline-heading">
             <h4 class="timeline-title">Secret Wars</h4>
@@ -41,20 +50,7 @@
           <div class="timeline-body">
             <p>The most powerful heroes and villains in the Marvel Universe square off on Battleword with the victor promised their greatest dreams and desires! Writer Jim Shooter and artists Mike Zeck and Bob Layton introduce the Beyonder in a 12-issue event featuring the Avengers, the X-Men, the Fantastic Four, Spider-Man, Magneto, Doctor Doom and more!</p>
           </div>
-        </div>
-
-
-      </li>
-      <li class="timeline">
-        <div class="timeline-badge"><i class="glyphicon glyphicon-hand-left"></i></div>
-        <div class="timeline-panel">
-          <div class="timeline-heading">
-            <h4 class="timeline-title">Secret Wars</h4>
-            <h5 class="timeline-date">Publication of first issue: 1984</h5>
-          </div>
-          <div class="timeline-body">
-            <p>The most powerful heroes and villains in the Marvel Universe square off on Battleword with the victor promised their greatest dreams and desires! Writer Jim Shooter and artists Mike Zeck and Bob Layton introduce the Beyonder in a 12-issue event featuring the Avengers, the X-Men, the Fantastic Four, Spider-Man, Magneto, Doctor Doom and more!</p>
-          </div>
+          <!-- <button class="btn btn-default btn-xs" type="button" data-toggle="modal" href="#myModal1">Cover</button> -->
         </div>
       </li>
       <li class="timeline_li">
@@ -125,5 +121,11 @@
       </li>
     </ul>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-dateFormat/1.0/jquery.dateFormat.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+  <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="marvel_timelines.js"></script>
 </body>
 </html>

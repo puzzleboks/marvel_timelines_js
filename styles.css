@@ -150,11 +150,11 @@
   text-align: center;
 }
 
-
 .heroImg {
   background-image: url(hulk2.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  width: 464px;
   height: 261px;
   margin-top: 20px;
   padding-bottom: 0;
@@ -172,6 +172,23 @@
   border-bottom: none;
 }
 
+.btn-xs {
+  margin-top: 10px;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-input-placeholder {
+  text-align: center;
+}
+
+#myModal1 {
+/*top:50%;*/
+/*right:50%;*/
+/*outline: none;*/
+}
 
 @media (max-width: 767px) {
     ul.timeline:before {
