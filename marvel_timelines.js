@@ -16,12 +16,23 @@ $(document).ready(function(){
         type: "get",
         dataType: "json"
       }).done(function(response){
-        //if doesn't exist, then try again?
-        var etag = response.etag;
         var heroId = response.data.results[0].id;
-        //if image path is null
-        var myImgPath = response.data.results[0].thumbnail.path + "/landscape_incredible.jpg";
         var limit = 50;
+        // var etag = response.etag;
+        //if doesn't exist, then try again?
+        console.log(response.data.results[0].thumbnail)
+        if (response.data.results[0].thumbnail!==null){
+          var myImgPath = response.data.results[0].thumbnail.path + "/landscape_incredible.jpg";
+          // console.log('it is null');
+        }else{
+          var myImgPath = "http://dummyimage.com/464x261/3b3b3b/ffffff.png&text=No+image+available";
+          $('.heroInput').attr({'placeholder': 'Sorry, try a different superhero'})
+        }
+
+
+        //if image path is null
+        // var myImgPath = response.data.results[0].thumbnail.path + "/landscape_incredible.jpg";
+
 
         // console.log(startDate)
         // var testUrl = response.data.results[0].events.items[0].resourceURI;
