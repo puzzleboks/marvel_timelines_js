@@ -4,7 +4,7 @@
 
 ## Project
 
-A simple front-end JavaScript application that interacts with the Marvel API. It returns, in descending order by date, a timeline of major events in the Marvel universe in which a particular superhero appears. The user can then see an image of the first published issue of that event.
+A simple front-end JavaScript application that interacts with the Marvel API. It returns, in descending order by date, a timeline of major events in the Marvel universe in which a particular superhero appears. The user can then see an image of the first published issue of each event.
 
 ## Technologies
 
