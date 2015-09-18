@@ -1,3 +1,3 @@
 # marvel_timelines_js
 
-![alt text](marvel_screenshot2.jpg "Description goes here")
+![alt text](marvel_screenshot2.png "Description goes here")
