@@ -4,6 +4,7 @@ $(document).ready(function(){
       event.preventDefault();
       $('.heroInput').attr({'placeholder': 'Type in the name of a Marvel superhero'});
 
+      //PRIVATE KEY GOES HERE
       var privKey = "";
       pubKey = "e687d607d622b25c31d6ae38f2f42597";
       var name = event.target.value;
@@ -28,7 +29,8 @@ $(document).ready(function(){
           }
         }else{
           var myImgPath = "http://dummyimage.com/464x261/3b3b3b/ffffff.png&text=No+image+available";
-          $('.heroInput').attr({'placeholder': 'Sorry, try a different superhero'})
+          $('.heroInput').attr({'placeholder': 'Sorry, try a different superhero'});
+          $('.heroImg').css({'background-image': 'url(' + myImgPath + ')', 'background-repeat': 'no-repeat', 'background-position': '50% 50%'});
           console.log("else")
         }
 
